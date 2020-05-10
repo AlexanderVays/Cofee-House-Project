@@ -1,0 +1,84 @@
+<!doctype html>
+
+<!-- author: Alexander Vays
+     version: 1.0 -->
+<html>
+	<head>
+		<title>Connect - Anna's Coffee House</title>
+		<link rel="icon" href="images/coffee_icon.png" type="image/png">
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/style.css" />		
+	<body id="connect"> 
+		<div id="container">
+		<img id="background" src="images/background.jpg" alt="coffee_house" />
+		<header>
+			<a href="index.html"><img id="logo" src="images/logo.jpg" alt="coffee_logo"></a>
+			<p id="site_map"><a href="sitemap.html">Site Map</a></p>
+			<h1>Anna's Coffee House</h1>
+			<nav>
+				<ul id="nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="menu.html">Menu</a></li>
+					<li><a href="hours.html">Hours</a></li>
+					<li><a href="specials.html">Specials</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="location.html">Location</a></li>
+					<li id="nav_connect"><a href="connect.html">Connect</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div id="content">
+		<img id="body_pic" src="images/wood.jpg" alt="wood_table" />
+		<h2 id="connect_header">Connect with us</h2>
+		<h3 id="contact">We want to hear from you! Please fill out the form and we will get back to you as soon as possible.</h3>
+		<form method="post" action="processing_script.php">
+			<br />
+			<div class="con_left">
+			<label for="firstname">First Name*</label>
+			<br />
+			<input type="text"
+				   name="firstname"
+				   id="firstname" required>
+			</div>
+			<label for="lastname">Last Name*</label>
+			<br />
+			<input type="text"
+				   name="lastname"
+				   id="lastname" required>
+			<br /><br />
+			<div class="con_left">
+			<label for="customer_email">Email Address*</label>
+			<br />
+			<input type="text"
+				   name="customer_email"
+				   id="customer_email" required>
+			</div>
+			<label for="phone">Phone Number</label>
+			<br />
+			<input type="text"
+				   name="phone"
+				   id="phone" />
+			<br />
+			<label id="label_subject" for="subject">Subject</label>
+			<select name="subject" id="subject" size="1">
+			<option value="customer_comments">Customer Comments</option>
+			<option value="careers">Careers</option>
+			<option value="catering">Catering</option>
+			<option value="franchising_opportunities">Franchising Opportunities</option>
+			<option value="general_inquires">General Inquires</option>
+			</select>
+			<br /><br />
+			<label for="message">Your message*</label>
+			<br />
+			<textarea name="message" id="message" required></textarea>
+			<br />
+			<input type="submit" class="button" value="Submit" />
+		</form>
+		</div>
+		<footer id="footer_connect">
+			<p id="copyright">Copyright &copy; Alexander Vays 2018</p>
+			<p id="coffee_email"><a href="mailto:vays.alexander@gmail.com">vays.alexander@gmail.com</a></p>
+		</footer>
+		</div>
+	</body>
+</html>
